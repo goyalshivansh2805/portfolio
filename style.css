@@ -290,7 +290,147 @@ nav ul {
     color: white;
 }
 
+.project-container{
+    position: relative;
+    top: 86vh;
+    height: 200vh;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
+.projects-title{
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: var(--secondary-linear-gradient-color);
+    background-clip: text;
+    color: transparent;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.project{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    border:2px solid white;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 500px;
+}
+
+.project h3{
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--skills-bg-color);
+    background-clip: text;
+    color: transparent;
+}
+
+.project a{
+    text-decoration: none;
+}
+
+.project p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #a9a9a9;
+}
+
+.to-repo-icon{
+    position: absolute;
+    top:73%;
+    right: 5rem;
+    font-size: 1.2rem;
+}
+
+
+.to-repo-icon .fab{
+    font-size: 2rem;
+    color: white;
+}
+
+.contact-container{
+    position: relative;
+    top: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    padding: 2rem; 
+}
+
+.contact-title{
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center; 
+    letter-spacing: 2px; 
+    background:var(--secondary-linear-gradient-color);
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+input,textarea{
+    width: 400px;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+}
+
+.form-btn{
+    display: grid;
+    place-content: center;
+    margin-top: 2rem;
+}
+
+.form-btn .btn{
+    width: 150px;
+}
+
+footer{
+    position: relative;
+    top: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+}
 
 .typing {
     font-family: monospace;
@@ -301,7 +441,6 @@ nav ul {
     width: 19ch; 
     animation: typing 5s steps(20) infinite forwards, blink 0.5s step-end infinite alternate;
   }
-
 
 .edu-section::before {
     content: '';
