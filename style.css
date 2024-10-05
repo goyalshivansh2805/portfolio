@@ -167,7 +167,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    max-height: 130vh;
+    max-height: 250vh;
     width: 100%;
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
@@ -531,7 +531,8 @@ footer{
 
     .secondary-info-container{
         top: 78vh;
-        height: 150vh;
+        min-height: 160vh;
+        max-height: 300vh;
     }
 
     .edu-section{
@@ -556,12 +557,12 @@ footer{
 
     .skills-container{
         top:78vh;
-        height: 175vh;
+        max-height: 300vh;
     }
 
     .skills-title{
         font-size: 2.5rem;
-        margin-top: -2rem;
+        margin-top: 2rem;
     }
     .skills{
         flex-direction: column;
