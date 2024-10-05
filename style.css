@@ -167,6 +167,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    max-height: 130vh;
     width: 100%;
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
@@ -238,7 +239,8 @@ nav ul {
     position: relative;
     top:86vh;
     display: flex;
-    min-height: 50%;
+    min-height: 50vh;
+    min-height: 100vh;
     width: 100%;
     background-color: rgb(31,31,32);
 }
@@ -293,7 +295,7 @@ nav ul {
 .project-container{
     position: relative;
     top: 86vh;
-    height: 200vh;
+    max-height: 200vh;
     background-color: var(--secondary-bg-color);
     display: flex;
     align-items: center;
@@ -336,7 +338,7 @@ nav ul {
     background-color: var(--secondary-bg-color);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 50%;
-    height: 500px;
+    min-height: 500px;
 }
 
 .project h3{
@@ -502,4 +504,110 @@ footer{
     50% {
         border-color: transparent;
     }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1080px){
+    .logo{
+        display: none;
+    }
+    nav{
+        padding: 1rem 2rem;
+    }
+    .nav-links li{
+        margin: 0.5rem 0;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .primary-info{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .secondary-info-container{
+        top: 78vh;
+        height: 150vh;
+    }
+
+    .edu-section{
+        margin-top: 8rem;
+    }
+
+    .timeline{
+        width: 200px;
+    }
+
+    .timeline.up{
+        transform: translateY(-105px);
+    }
+    
+    .timeline.down{
+        transform: translateY(107px);
+    }
+
+    .timeline.down.akg::before{
+        top: -23%;
+    }
+
+    .skills-container{
+        top:78vh;
+        height: 175vh;
+    }
+
+    .skills-title{
+        font-size: 2.5rem;
+        margin-top: -2rem;
+    }
+    .skills{
+        flex-direction: column;
+    }
+
+    .project-container{
+        top: 78vh;
+        min-height:150vh;
+        max-height: 250vh;
+        width: 100%;
+    }
+
+    .projects img{
+        width: 100%;
+        height: auto;
+    }
+    .projects-title{
+        font-size: 2.5rem;
+    }
+
+    .project{
+        min-width: 100%;
+    
+        max-height: 600px;
+    }
+
+    .to-repo-icon{
+        right: .5rem;
+        top: 49%;
+    }
+
+    .contact-container{
+        top: 78vh;
+        min-height: 50vh;
+        max-height: 90vh;
+    }
+    .contact-title{
+        font-size: 2.5rem;
+        margin-top: -2rem;
+    }
+
+    input,textarea{
+        width: 300px;
+    }
+
+    footer{
+        top: 78vh;
+        height: 10vh;
+    }
+
 }
