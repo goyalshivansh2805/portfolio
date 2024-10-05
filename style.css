@@ -295,7 +295,7 @@ nav ul {
 .project-container{
     position: relative;
     top: 86vh;
-    max-height: 200vh;
+    max-height: 250vh;
     background-color: var(--secondary-bg-color);
     display: flex;
     align-items: center;
@@ -312,6 +312,11 @@ nav ul {
     background: var(--secondary-linear-gradient-color);
     background-clip: text;
     color: transparent;
+}
+
+.project img{
+    width: calc(100%-2rem);
+    height: auto;
 }
 
 .projects{
@@ -337,8 +342,8 @@ nav ul {
     position: relative;
     background-color: var(--secondary-bg-color);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    min-height: 500px;
+    width: 70%;
+    min-height: 300px;
 }
 
 .project h3{
@@ -359,19 +364,16 @@ nav ul {
     color: #a9a9a9;
 }
 
-.to-repo-icon{
-    position: absolute;
-    top:73%;
-    right: 5rem;
-    font-size: 1.2rem;
-}
-
-
 .to-repo-icon .fab{
     font-size: 2rem;
     color: white;
 }
-
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+;
+}
 .contact-container{
     position: relative;
     top: 86vh;
@@ -582,13 +584,7 @@ footer{
 
     .project{
         min-width: 100%;
-    
-        max-height: 600px;
-    }
-
-    .to-repo-icon{
-        right: .5rem;
-        top: 49%;
+        max-height: 700px;
     }
 
     .contact-container{
