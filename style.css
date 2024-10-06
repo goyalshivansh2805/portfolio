@@ -443,7 +443,7 @@ footer{
     overflow: hidden;
     border-right: 2px solid;
     width: 19ch; 
-    animation: typing 5s steps(20) infinite forwards, blink 0.5s step-end infinite alternate;
+    animation: typing 5s steps(19) infinite forwards, blink 0.5s step-end infinite alternate;
   }
 
 .edu-section::before {
